@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5451838819647E0A005B583F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451838719647E0A005B583F /* AppDelegate.swift */; };
+		5451838A19647E0A005B583F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5451838919647E0A005B583F /* ViewController.swift */; };
+		5451838F19647E0A005B583F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5451838E19647E0A005B583F /* Images.xcassets */; };
+		545183A919647E3F005B583F /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545183A819647E3F005B583F /* HamburgerButton.swift */; };
+		545183AB19647E9E005B583F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545183AA19647E9E005B583F /* QuartzCore.framework */; };
+		545183AD196480E9005B583F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545183AC196480E9005B583F /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5451838219647E0A005B583F /* Hamburger Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hamburger Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5451838619647E0A005B583F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5451838719647E0A005B583F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5451838919647E0A005B583F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5451838E19647E0A005B583F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		545183A819647E3F005B583F /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
+		545183AA19647E9E005B583F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		545183AC196480E9005B583F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5451837F19647E0A005B583F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545183AB19647E9E005B583F /* QuartzCore.framework in Frameworks */,
+				545183AD196480E9005B583F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5451837919647E0A005B583F = {
+			isa = PBXGroup;
+			children = (
+				5451838419647E0A005B583F /* Hamburger Button */,
+				545183AE196480EF005B583F /* Frameworks */,
+				5451838319647E0A005B583F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5451838319647E0A005B583F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5451838219647E0A005B583F /* Hamburger Button.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5451838419647E0A005B583F /* Hamburger Button */ = {
+			isa = PBXGroup;
+			children = (
+				5451838719647E0A005B583F /* AppDelegate.swift */,
+				5451838919647E0A005B583F /* ViewController.swift */,
+				545183A819647E3F005B583F /* HamburgerButton.swift */,
+				5451838E19647E0A005B583F /* Images.xcassets */,
+				5451838519647E0A005B583F /* Supporting Files */,
+			);
+			path = "Hamburger Button";
+			sourceTree = "<group>";
+		};
+		5451838519647E0A005B583F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5451838619647E0A005B583F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		545183AE196480EF005B583F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545183AC196480E9005B583F /* CoreGraphics.framework */,
+				545183AA19647E9E005B583F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5451838119647E0A005B583F /* Hamburger Button */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5451839E19647E0A005B583F /* Build configuration list for PBXNativeTarget "Hamburger Button" */;
+			buildPhases = (
+				5451837E19647E0A005B583F /* Sources */,
+				5451837F19647E0A005B583F /* Frameworks */,
+				5451838019647E0A005B583F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hamburger Button";
+			productName = "Hamburger Button";
+			productReference = 5451838219647E0A005B583F /* Hamburger Button.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5451837A19647E0A005B583F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Robert Böhnke";
+				TargetAttributes = {
+					5451838119647E0A005B583F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 5451837D19647E0A005B583F /* Build configuration list for PBXProject "Hamburger Button" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5451837919647E0A005B583F;
+			productRefGroup = 5451838319647E0A005B583F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5451838119647E0A005B583F /* Hamburger Button */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5451838019647E0A005B583F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5451838F19647E0A005B583F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5451837E19647E0A005B583F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5451838A19647E0A005B583F /* ViewController.swift in Sources */,
+				545183A919647E3F005B583F /* HamburgerButton.swift in Sources */,
+				5451838819647E0A005B583F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5451839C19647E0A005B583F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5451839D19647E0A005B583F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5451839F19647E0A005B583F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Hamburger Button/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Hamburger Button";
+			};
+			name = Debug;
+		};
+		545183A019647E0A005B583F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Hamburger Button/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Hamburger Button";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5451837D19647E0A005B583F /* Build configuration list for PBXProject "Hamburger Button" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5451839C19647E0A005B583F /* Debug */,
+				5451839D19647E0A005B583F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5451839E19647E0A005B583F /* Build configuration list for PBXNativeTarget "Hamburger Button" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5451839F19647E0A005B583F /* Debug */,
+				545183A019647E0A005B583F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5451837A19647E0A005B583F /* Project object */;
+}
