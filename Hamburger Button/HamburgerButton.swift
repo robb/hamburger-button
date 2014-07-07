@@ -108,7 +108,7 @@ class HamburgerButton : UIButton {
 
             let topTransform = CABasicAnimation(keyPath: "transform")
             topTransform.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, -0.8, 0.5, 1.85)
-            topTransform.duration = 0.5
+            topTransform.duration = 0.4
             topTransform.fillMode = kCAFillModeBackwards
 
             let bottomTransform = topTransform.copy() as CABasicAnimation
