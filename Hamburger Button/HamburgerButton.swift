@@ -106,14 +106,17 @@ class HamburgerButton : UIButton {
             self.middle.ocb_applyAnimation(strokeStart)
             self.middle.ocb_applyAnimation(strokeEnd)
 
-            let timingFunction = CAMediaTimingFunction(controlPoints: 0.25, -0.8, 0.75, 1.85)
-
+            let timingFunction = CAMediaTimingFunction(controlPoints: 0.5, -0.8, 0.5, 1.85)
+            let duration = 0.5
+            
             let topTransform = CABasicAnimation(keyPath: "transform")
             topTransform.timingFunction = timingFunction
+            topTransform.duration = duration
             topTransform.fillMode = kCAFillModeBackwards
-
+            
             let bottomTransform = CABasicAnimation(keyPath: "transform")
             bottomTransform.timingFunction = timingFunction
+            bottomTransform.duration = duration
             bottomTransform.fillMode = kCAFillModeBackwards
 
             if self.showsMenu {
