@@ -13,6 +13,7 @@
 		545183A919647E3F005B583F /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545183A819647E3F005B583F /* HamburgerButton.swift */; };
 		545183AB19647E9E005B583F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545183AA19647E9E005B583F /* QuartzCore.framework */; };
 		545183AD196480E9005B583F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545183AC196480E9005B583F /* CoreGraphics.framework */; };
+		5D9301C4196D55E000E4A7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9301C3196D55E000E4A7E4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		545183A819647E3F005B583F /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		545183AA19647E9E005B583F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		545183AC196480E9005B583F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D9301C3196D55E000E4A7E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5451838719647E0A005B583F /* AppDelegate.swift */,
 				5451838919647E0A005B583F /* ViewController.swift */,
 				545183A819647E3F005B583F /* HamburgerButton.swift */,
+				5D9301C3196D55E000E4A7E4 /* Main.storyboard */,
 				5451838E19647E0A005B583F /* Images.xcassets */,
 				5451838519647E0A005B583F /* Supporting Files */,
 			);
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9301C4196D55E000E4A7E4 /* Main.storyboard in Resources */,
 				5451838F19647E0A005B583F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

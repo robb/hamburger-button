@@ -10,6 +10,7 @@ import CoreGraphics
 import QuartzCore
 import UIKit
 
+@IBDesignable
 class HamburgerButton : UIButton {
     let shortStroke: CGPath = {
         let path = CGPathCreateMutable()
@@ -38,17 +39,29 @@ class HamburgerButton : UIButton {
 
     let hamburgerStrokeStart: CGFloat = 0.028
     let hamburgerStrokeEnd: CGFloat = 0.111
-
+    
+    @IBInspectable var color: UIColor = UIColor.whiteColor()
+    
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+        
+        initLayers()
+    }
+    
     init(frame: CGRect) {
         super.init(frame: frame)
-
+        
+        initLayers()
+    }
+    
+    func initLayers() {
         self.top.path = shortStroke
         self.middle.path = outline
         self.bottom.path = shortStroke
 
         for layer in [ self.top, self.middle, self.bottom ] {
             layer.fillColor = nil
-            layer.strokeColor = UIColor.whiteColor().CGColor
+            layer.strokeColor = color.CGColor
             layer.lineWidth = 4
             layer.miterLimit = 4
             layer.lineCap = kCALineCapRound
@@ -77,8 +90,8 @@ class HamburgerButton : UIButton {
         self.bottom.anchorPoint = CGPointMake(28.0 / 30.0, 0.5)
         self.bottom.position = CGPointMake(40, 36)
     }
-
-    var showsMenu: Bool = false {
+    
+    @IBInspectable var showsMenu: Bool = false {
         didSet {
             let strokeStart = CABasicAnimation(keyPath: "strokeStart")
             let strokeEnd = CABasicAnimation(keyPath: "strokeEnd")
