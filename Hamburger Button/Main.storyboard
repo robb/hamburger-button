@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dnM-fk-rHL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CP3-eL-dRG">
+            <objects>
+                <viewController id="dnM-fk-rHL" customClass="ViewController" customModule="Hamburger_Button" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N72-rd-vdb"/>
+                        <viewControllerLayoutGuide type="bottom" id="cNw-05-QkQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhi-zw-uMc">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG8-lC-qor" customClass="HamburgerButton" customModule="Hamburger_Button" customModuleProvider="target">
+                                <rect key="frame" x="213" y="133" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="ZfD-gW-KEc"/>
+                                    <constraint firstAttribute="height" constant="54" id="sXK-1r-Ccx"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggle:" destination="dnM-fk-rHL" eventType="touchUpInside" id="aIW-IF-h14"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.59215686274509804" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="LG8-lC-qor" firstAttribute="top" secondItem="rhi-zw-uMc" secondAttribute="top" constant="133" id="66Q-AJ-9xm"/>
+                            <constraint firstAttribute="centerX" secondItem="LG8-lC-qor" secondAttribute="centerX" id="bZW-5E-QBl"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="button" destination="LG8-lC-qor" id="Ngn-Bb-Nmq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64R-mg-Znk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="345"/>
+        </scene>
+    </scenes>
+</document>
