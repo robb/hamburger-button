@@ -38,8 +38,12 @@ class HamburgerButton : UIButton {
 
     let hamburgerStrokeStart: CGFloat = 0.028
     let hamburgerStrokeEnd: CGFloat = 0.111
+    
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
 
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
 
         self.top.path = shortStroke
