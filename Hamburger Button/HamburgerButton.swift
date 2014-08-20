@@ -39,7 +39,7 @@ class HamburgerButton : UIButton {
     let hamburgerStrokeStart: CGFloat = 0.028
     let hamburgerStrokeEnd: CGFloat = 0.111
     
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
@@ -147,7 +147,7 @@ extension CALayer {
     func ocb_applyAnimation(animation: CABasicAnimation) {
         let copy = animation.copy() as CABasicAnimation
 
-        if !copy.fromValue {
+        if copy.fromValue != nil {
             copy.fromValue = self.presentationLayer().valueForKeyPath(copy.keyPath)
         }
 
