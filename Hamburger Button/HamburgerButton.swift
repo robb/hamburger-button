@@ -147,7 +147,7 @@ extension CALayer {
     func ocb_applyAnimation(animation: CABasicAnimation) {
         let copy = animation.copy() as CABasicAnimation
 
-        if copy.fromValue != nil {
+        if copy.fromValue == nil {
             copy.fromValue = self.presentationLayer().valueForKeyPath(copy.keyPath)
         }
 
