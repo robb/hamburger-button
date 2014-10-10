@@ -43,6 +43,17 @@ import UIKit
         super.init(frame: frame)
     }
     
+    override func intrinsicContentSize() -> CGSize {
+        if(size > 0)
+        {
+            return CGSize(width: size, height: size)
+        }
+        else
+        {
+            return CGSize(width: 44.0, height: 44.0)
+        }
+    }
+    
     override func drawRect(rect: CGRect)
     {
         scaleFactor = (size > 0) ? size / 54.0 : (frame.height < frame.width) ? frame.height / 54.0 : frame.width / 54.0
