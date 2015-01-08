@@ -12,7 +12,8 @@ import UIKit
 
 @IBDesignable class HamburgerButton : UIButton {
     
-    @IBInspectable var color:UIColor = UIColor.whiteColor()
+    @IBInspectable var menuColor:UIColor = UIColor.whiteColor()
+    @IBInspectable var closeColor:UIColor = UIColor.whiteColor()
     @IBInspectable var size:CGFloat = 0
     @IBInspectable var menu:Bool = false
     
@@ -85,7 +86,7 @@ import UIKit
         
         for layer in [ self.top, self.middle, self.bottom ] {
             layer.fillColor = nil
-            layer.strokeColor = color.CGColor
+            layer.strokeColor = menuColor.CGColor
             layer.lineWidth = strokeSize
             layer.miterLimit = 100
             layer.lineCap = kCALineCapRound
@@ -127,8 +128,10 @@ import UIKit
             {
                 return
             }
+            
             let strokeStart = CABasicAnimation(keyPath: "strokeStart")
             let strokeEnd = CABasicAnimation(keyPath: "strokeEnd")
+            let strokeColor = CABasicAnimation(keyPath: "strokeColor")
             
             if self.showsMenu {
                 strokeStart.toValue = menuStrokeStart
@@ -137,6 +140,9 @@ import UIKit
                 
                 strokeEnd.toValue = menuStrokeEnd
                 strokeEnd.duration = 0.6
+                strokeEnd.timingFunction = CAMediaTimingFunction(controlPoints: 0.25, -0.4, 0.5, 1)
+                
+                strokeColor.toValue = closeColor.CGColor
                 strokeEnd.timingFunction = CAMediaTimingFunction(controlPoints: 0.25, -0.4, 0.5, 1)
             } else {
                 strokeStart.toValue = hamburgerStrokeStart
@@ -148,10 +154,15 @@ import UIKit
                 strokeEnd.toValue = hamburgerStrokeEnd
                 strokeEnd.duration = 0.6
                 strokeEnd.timingFunction = CAMediaTimingFunction(controlPoints: 0.25, 0.3, 0.5, 0.9)
+                
+                strokeColor.toValue = menuColor.CGColor
             }
             
+            
+            self.middle.ocb_applyAnimation(strokeColor)
             self.middle.ocb_applyAnimation(strokeStart)
             self.middle.ocb_applyAnimation(strokeEnd)
+
             
             let topTransform = CABasicAnimation(keyPath: "transform")
             topTransform.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, -0.8, 0.5, 1.85)
@@ -177,7 +188,9 @@ import UIKit
             }
             
             self.top.ocb_applyAnimation(topTransform)
+            self.top.ocb_applyAnimation(strokeColor)
             self.bottom.ocb_applyAnimation(bottomTransform)
+            self.bottom.ocb_applyAnimation(strokeColor)
         }
     }
     

@@ -17,7 +17,10 @@ class ViewController: UIViewController {
 
         self.button = HamburgerButton(frame: CGRectMake(133, 133, 54, 54))
         self.button.addTarget(self, action: "toggle:", forControlEvents:.TouchUpInside)
-
+        
+        button.menuColor = UIColor.redColor()
+        button.closeColor = UIColor.blueColor()
+        
         self.view.addSubview(button)
     }
 
