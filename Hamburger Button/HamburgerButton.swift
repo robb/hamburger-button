@@ -115,7 +115,7 @@ class HamburgerButton : UIButton {
             topTransform.duration = 0.4
             topTransform.fillMode = kCAFillModeBackwards
 
-            let bottomTransform = topTransform.copy() as CABasicAnimation
+            let bottomTransform = topTransform.copy() as! CABasicAnimation
 
             if self.showsMenu {
                 let translation = CATransform3DMakeTranslation(-4, 0, 0)
@@ -145,7 +145,7 @@ class HamburgerButton : UIButton {
 
 extension CALayer {
     func ocb_applyAnimation(animation: CABasicAnimation) {
-        let copy = animation.copy() as CABasicAnimation
+        let copy = animation.copy() as! CABasicAnimation
 
         if copy.fromValue == nil {
             copy.fromValue = self.presentationLayer().valueForKeyPath(copy.keyPath)
