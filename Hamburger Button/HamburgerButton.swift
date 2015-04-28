@@ -75,7 +75,7 @@ class HamburgerButton : UIButton {
         self.top.position = CGPointMake(40, 18)
 
         self.middle.position = CGPointMake(27, 27)
-        self.middle.strokeStart = hamburgerStrokeStart
+       self.middle.strokeStart = hamburgerStrokeStart
         self.middle.strokeEnd = hamburgerStrokeEnd
 
         self.bottom.anchorPoint = CGPointMake(28.0 / 30.0, 0.5)
