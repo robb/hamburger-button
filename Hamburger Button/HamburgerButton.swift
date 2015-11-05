@@ -58,7 +58,7 @@ class HamburgerButton : UIButton {
             layer.lineCap = kCALineCapRound
             layer.masksToBounds = true
 
-            let strokingPath = CGPathCreateCopyByStrokingPath(layer.path, nil, 4, kCGLineCapRound, kCGLineJoinMiter, 4)
+            let strokingPath = CGPathCreateCopyByStrokingPath(layer.path, nil, 4, .Round, .Milter, 4)
 
             layer.bounds = CGPathGetPathBoundingBox(strokingPath)
 
